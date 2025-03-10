@@ -1,0 +1,50 @@
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Редагування публікації</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/edit_post.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="articles.html">Статті</a></li>
+          <li><a href="my-posts.html">Мої публікації</a></li>
+        </ul>
+      </nav>
+      <h1>Зміни завжди на краще</h1>
+    </header>
+
+    <main>
+      <section class="edit-post">
+        <h1>Редагування публікації</h1>
+        <form action="my-posts.html" method="POST" enctype="multipart/form-data">
+          <div class="image-section">
+            <label for="post-image">Поточне зображення:</label>
+            <img src="../images/spain123.jpg" alt="Поточне зображення" class="current-image" />
+          
+            <label for="new-image" class="file-label">Оберіть нове зображення</label>
+            <input type="file" id="new-image" name="new-image" accept="image/*" />
+          </div>
+
+          <label for="post-title">Заголовок:</label>
+          <input type="text" id="post-title" name="post-title" value="Подорож до Іспанії" class="post-title" />
+
+          <label for="post-content">Опис:</label>
+          <textarea id="post-content" name="post-content" class="post-content">
+Відвідування Барселони та Мадрида було неймовірним досвідом...</textarea
+          >
+
+          <button class="confirm-btn" type="submit">Зберегти зміни</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Виконав студент групи ОІ-23 Яйко Назар</p>
+    </footer>
+  </body>
+</html>
