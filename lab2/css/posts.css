@@ -257,3 +257,54 @@
 .page-next:hover {
   background-color: #f0f0f0;
 }
+
+/* Стилі для лайкнутих карток */
+.card.liked {
+  position: relative;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  color: #d4af37;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.card.liked::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.1) 0%,
+    rgba(212, 175, 55, 0) 20%,
+    rgba(212, 175, 55, 0) 80%,
+    rgba(212, 175, 55, 0.1) 100%
+  );
+  pointer-events: none;
+  border-radius: 20px;
+}
+
+.card.liked .card-title {
+  color: #d4af37;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.card.liked .author {
+  color: #d4af37;
+}
+
+.card.liked .card-date {
+  color: rgba(212, 175, 55, 0.8);
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.card.liked .card-image {
+  opacity: 0.9;
+  filter: brightness(0.8) contrast(1.2);
+}
+
+.card.liked:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}

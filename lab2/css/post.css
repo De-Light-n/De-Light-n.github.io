@@ -223,6 +223,48 @@ body {
   background: #333;
 }
 
+
+.post-actions {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.like-btn, .share-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.like-btn:hover, .share-btn:hover {
+  color: #333;
+}
+
+.like-btn.active {
+  color: #ff4757;
+}
+
+.like-icon, .share-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.like-count {
+  font-size: 0.9rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   body {

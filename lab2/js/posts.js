@@ -1,26 +1,24 @@
-import { mainArticles, sidebarArticles } from "./articles_data.js";
-import mainArticles from "lab2/js/articles_data.js";
-// Функція для збереження даних у localStorage перед переходом
-function setPostData(event, articleId) {
-  event.preventDefault();
-  const article = mainArticles.find(item => item.id === articleId);
-  if (article) {
-    sessionStorage.setItem(`currentPost`, JSON.stringify(article));
-    window.location.href = `post.html?id=${articleId}`;
-  }
+import { mainArticles } from "./articles_data.js";
+
+function isArticleLiked(articleId) {
+  const savedLikeState = localStorage.getItem(`post-${articleId}-liked`);
+  return savedLikeState ? JSON.parse(savedLikeState) : false;
 }
 
-// Генерація статей на головній сторінці
-const mainContainer = document.querySelector(".cards");
-mainArticles.forEach((article) => {
-  const articleHTML = `
-    <a class="card" href="post.html?id=${article.id}" onclick='setPostData(event, ${article.id})'>
+// 🔹 Функція створення HTML-картки для головної сторінки
+function createMainArticleHTML(article) {
+  const isLiked = isArticleLiked(article.id);
+  const likedClass = isLiked ? 'liked' : '';
+  
+  return `
+    <a class="card ${likedClass}" href="post.html?id=${article.id}">
       <div class="card-image-container">
         <img src="${article.img}" alt="Post Image" class="card-image"/>
       </div>
       <div class="card-content">
         <div class="author-container">
-          <img src="${article.authorImg}" alt="${article.author}" class="author-avatar" onerror="this.parentElement.textContent = '👤'"/>
+          <img src="${article.authorImg}" alt="${article.author}" class="author-avatar" 
+               onerror="this.src='../icons/anonymous.png'"/>
           <span class="author">${article.author}</span>
         </div>
         <h3 class="card-title">${article.title}</h3>
@@ -28,23 +26,38 @@ mainArticles.forEach((article) => {
       </div>
     </a>
   `;
-  mainContainer.innerHTML += articleHTML;
-});
+}
 
-// Генерація статей для сайдбару
-const sidebarContainer = document.querySelector(".sidebar");
-let j = 0;
-while (j < sidebarArticles.length) {
-  const article = sidebarArticles[j];
-  const articleHTML = `
-    <a href="post.html" class="sidebar-post-link">
+// 🔹 Функція створення HTML-картки для сайдбару
+function createSidebarArticleHTML(article) {
+  return `
+    <a href="post.html?id=${article.id}" class="sidebar-post-link">
       <div class="sidebar-post">
         <h3>${article.author}</h3>
         <p>${article.title}</p>
         <div class="divider"></div>
       </div>
-      </a>
-    `;
-  sidebarContainer.innerHTML += articleHTML;
-  j++;
+    </a>
+  `;
+}
+
+// 🔹 Розділяємо mainArticles на дві частини
+const halfLength = Math.ceil(mainArticles.length / 2);
+const mainArticlesToRender = mainArticles.slice(0, halfLength);
+const sidebarArticlesToRender = mainArticles.slice(halfLength);
+
+// 🔹 Рендер головних статей
+const mainContainer = document.querySelector(".cards");
+if (mainContainer) {
+  mainContainer.innerHTML = mainArticlesToRender.map(createMainArticleHTML).join('');
+} else {
+  console.error("Error: .cards container not found.");
+}
+
+// 🔹 Рендер статей у сайдбарі
+const sidebarContainer = document.querySelector(".sidebar");
+if (sidebarContainer) {
+  sidebarContainer.innerHTML = sidebarArticlesToRender.map(createSidebarArticleHTML).join('');
+} else {
+  console.error("Error: .sidebar container not found.");
 }
