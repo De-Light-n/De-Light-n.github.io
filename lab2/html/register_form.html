@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Chat</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">Podoroj</div>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li class="nav-item dropdown">
+            <a href="../html/articles.html">Статті +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Подорожі</h4>
+                <a href="#">Останні статті</a>
+                <a href="#">Популярне</a>
+                <a href="#">Рекомендовані місця</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Поради</h4>
+                <a href="#">Бюджетні подорожі</a>
+                <a href="#">Як зекономити</a>
+                <a href="#">Що взяти в дорогу</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Культура & Їжа</h4>
+                <a href="#">Місцеві традиції</a>
+                <a href="#">Кухні світу</a>
+                <a href="#">Ресторани та кафе</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Путівники</h4>
+                <a href="#">Маршрути по містах</a>
+                <a href="#">Похідні маршрути</a>
+                <a href="#">Екскурсії</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#">Напрямки +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Європа</h4>
+                <a href="#">Італія</a>
+                <a href="#">Франція</a>
+                <a href="#">Іспанія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Азія</h4>
+                <a href="#">Таїланд</a>
+                <a href="#">Індія</a>
+                <a href="#">Японія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Америка</h4>
+                <a href="#">США</a>
+                <a href="#">Бразилія</a>
+                <a href="#">Мексика</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Африка</h4>
+                <a href="#">Єгипет</a>
+                <a href="#">Кенія</a>
+                <a href="#">Марокко</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="../html/gallery.html">Фотогалерея</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../html/aboutus.html">Про нас</a>
+          </li>
+        </ul>
+      </div>
+      <a href="../html/letschat.html" class="cta-button">Напишіть мені</a>
+      <script src="../js/dropdown.js" defer></script>
+    </nav>
+
+    <div class="container">
+      <div class="left-column">
+        <h1>Оберіть свій аватар</h1>
+
+        <div class="avatar-selection">
+          <!-- Прев'ю обраного аватара -->
+          <div class="avatar-preview-container">
+            <div class="avatar-preview">
+              <img
+                id="avatar-preview"
+                src="../icons/anonymous.png"
+                alt="Ваш аватар"
+              />
+            </div>
+          </div>
+
+          <!-- Кнопка завантаження аватара -->
+          <div class="upload-avatar">
+            <label for="avatar-upload" class="upload-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 5V19M5 12H19"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Вибрати зображення
+            </label>
+            <input
+              type="file"
+              id="avatar-upload"
+              accept="image/*"
+              style="display: none"
+            />
+          </div>
+
+          <!-- Інструкції -->
+          <div class="avatar-requirements">
+            <p>Рекомендовано:</p>
+            <ul>
+              <li>Формат: JPG, PNG</li>
+              <li>Розмір: до 5MB</li>
+              <li>Мінімальний розмір: 200×200px</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-group">
+          <label for="name">Як вас звати?</label>
+          <input type="text" id="name" placeholder="Ваше ім'я" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваша електронна пошта</label>
+          <input type="email" id="email" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Ваш номер телефону</label>
+          <input type="tel" id="phone" placeholder="Телефон" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Розкажіть про себе</label>
+          <textarea
+            id="message"
+            placeholder="Напишіть трохи про себе та свої інтереси"
+          ></textarea>
+        </div>
+
+        <p class="note">
+          Натискаючи кнопку реєстрації, ви погоджуєтесь з нашими умовами
+          використання.
+        </p>
+
+        <button type="submit" class="cta-button">Зареєструватися</button>
+      </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <!-- Верхній рядок -->
+    <div class="footer-top">
+      <p>hello@podoroj.com • Відкрий світ разом з нами • hello@podoroj.com</p>
+    </div>
+
+    <!-- Основний контент -->
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2 class="footer-title">Мандруй. Досліджуй. Відкривай.</h2>
+        <button class="chat-btn" onclick="redirectToChat()">
+          Написати нам →
+        </button>
+        <script>
+          function redirectToChat() {
+            window.location.href = "../html/letschat.html";
+          }
+        </script>
+      </div>
+
+      <div class="footer-nav">
+        <h4>НАВІГАЦІЯ</h4>
+        <ul>
+          <li><a href="../html/aboutus.html">Про нас</a></li>
+          <li><a href="../html/articles.html">Статті</a></li>
+          <li><a href="../html/gallery.html">Фотогалерея</a></li>
+          <li><a href="#">Популярні напрямки</a></li>
+          <li><a href="#">Путівники</a></li>
+          <li><a href="../html/letschat.html">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>ЩО МИ ПРОПОНУЄМО</h4>
+        <ul>
+          <li><a href="#">Поради для подорожей</a></li>
+          <li><a href="#">Бюджетні маршрути</a></li>
+          <li><a href="#">Огляди міст</a></li>
+          <li><a href="#">Гастрономічні тури</a></li>
+          <li><a href="#">Екскурсії</a></li>
+          <li><a href="#">Авторські путівники</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>КОНТАКТИ</h4>
+        <p>+38 067 123 45 67</p>
+        <p>
+          <a href="mailto:hello@podoroj.com">hello@podoroj.com</a>
+        </p>
+        <p>
+          вул. Степана Бандери, 10 <br />
+          Львів, Україна <br />
+          01001
+        </p>
+      </div>
+    </div>
+
+    <!-- Нижня частина -->
+    <div class="footer-bottom">
+      <p>© Podoroj 2025 <a href="#">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a></p>
+      <p>ДИЗАЙН ТА РОЗРОБКА ⚡ <a href="#">WEBSTUDIO</a></p>
+    </div>
+
+    <!-- Великий напис на фоні -->
+    <div class="footer-bg-text">Podoroj</div>
+  </footer>
+
+  <script>
+    document
+      .getElementById("avatar-upload")
+      .addEventListener("change", function (e) {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        // Перевірка розміру файлу (макс. 5MB)
+        if (file.size > 5 * 1024 * 1024) {
+          alert("Файл занадто великий. Максимальний розмір - 5MB.");
+          return;
+        }
+
+        // Перевірка типу файлу
+        const validTypes = ["image/jpeg", "image/png", "image/gif"];
+        if (!validTypes.includes(file.type)) {
+          alert("Будь ласка, виберіть зображення у форматі JPG, PNG або GIF.");
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          const img = new Image();
+          img.onload = function () {
+            // Перевірка мінімальних розмірів
+            if (this.width < 200 || this.height < 200) {
+              alert("Зображення занадто мале. Мінімальний розмір - 200×200px.");
+              return;
+            }
+
+            // Встановлюємо прев'ю
+            document.getElementById("avatar-preview").src = event.target.result;
+
+            // Можна додати логіку обрізки/масштабування тут
+          };
+          img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+  </script>
+</html>

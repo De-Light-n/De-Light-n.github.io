@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your publications</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">Podoroj</div>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li class="nav-item dropdown">
+            <a href="../html/articles.html">Статті +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Подорожі</h4>
+                <a href="#">Останні статті</a>
+                <a href="#">Популярне</a>
+                <a href="#">Рекомендовані місця</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Поради</h4>
+                <a href="#">Бюджетні подорожі</a>
+                <a href="#">Як зекономити</a>
+                <a href="#">Що взяти в дорогу</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Культура & Їжа</h4>
+                <a href="#">Місцеві традиції</a>
+                <a href="#">Кухні світу</a>
+                <a href="#">Ресторани та кафе</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Путівники</h4>
+                <a href="#">Маршрути по містах</a>
+                <a href="#">Похідні маршрути</a>
+                <a href="#">Екскурсії</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#">Напрямки +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Європа</h4>
+                <a href="#">Італія</a>
+                <a href="#">Франція</a>
+                <a href="#">Іспанія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Азія</h4>
+                <a href="#">Таїланд</a>
+                <a href="#">Індія</a>
+                <a href="#">Японія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Америка</h4>
+                <a href="#">США</a>
+                <a href="#">Бразилія</a>
+                <a href="#">Мексика</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Африка</h4>
+                <a href="#">Єгипет</a>
+                <a href="#">Кенія</a>
+                <a href="#">Марокко</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="../html/gallery.html">Фотогалерея</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../html/aboutus.html">Про нас</a>
+          </li>
+        </ul>
+      </div>
+      <a href="../html/register_form.html" class="cta-button"
+        >Зареєструватися</a
+      >
+      <script src="../js/dropdown.js" defer></script>
+    </nav>
+
+    <div class="publications-header">
+      <h1>Фото галерея</h1>
+      <p>Тут ви можете керувати своїми статтями, створювати їх або видаляти</p>
+    </div>
+
+    <!-- Нова секція "Створити пост" -->
+    <div class="create-post-section">
+      <div class="create-post-card">
+        <div class="create-post-content">
+          <div class="create-post-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </div>
+          <h3>Додати нову публікацію</h3>
+          <p>Натисніть, щоб почати створення нового посту</p>
+          <button class="create-post-btn" onclick="redirectToCreate()">
+            Створити пост
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="publications-list">
+      <div class="cards">
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../images/mountains-6486093_1920.jpg"
+              alt="Post Image"
+              class="card-image"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">
+              Managing Marketing Projects with Agile Principles
+            </h3>
+            <div class="card-date">Опубліковано: 15.06.2023</div>
+            <div class="publication-actions">
+              <button class="delete-btn">Видалити</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../images/mountains-6486093_1920.jpg"
+              alt="Post Image"
+              class="card-image"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">
+              The Dynamic Duo: Project Management and Marketing
+            </h3>
+            <div class="card-date">Опубліковано: 10.06.2023</div>
+            <div class="publication-actions">
+              <button class="delete-btn">Видалити</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image-container">
+            <img
+              src="../images/mountains-6486093_1920.jpg"
+              alt="Post Image"
+              class="card-image"
+            />
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">
+              Demystifying the Marketing Strategy Audit Process
+            </h3>
+            <div class="card-date">Опубліковано: 05.06.2023</div>
+            <div class="publication-actions">
+              <button class="delete-btn">Видалити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <!-- Верхній рядок -->
+      <div class="footer-top">
+        <p>hello@podoroj.com • Відкрий світ разом з нами • hello@podoroj.com</p>
+      </div>
+
+      <!-- Основний контент -->
+      <div class="footer-content">
+        <div class="footer-left">
+          <h2 class="footer-title">Мандруй. Досліджуй. Відкривай.</h2>
+          <button class="chat-btn" onclick="redirectToChat()">
+            Написати нам →
+          </button>
+          <script>
+            function redirectToChat() {
+              window.location.href = "../html/letschat.html";
+            }
+          </script>
+        </div>
+
+        <div class="footer-nav">
+          <h4>НАВІГАЦІЯ</h4>
+          <ul>
+            <li><a href="../html/aboutus.html">Про нас</a></li>
+            <li><a href="../html/articles.html">Статті</a></li>
+            <li><a href="../html/gallery.html">Фотогалерея</a></li>
+            <li><a href="#">Популярні напрямки</a></li>
+            <li><a href="#">Путівники</a></li>
+            <li><a href="../html/letschat.html">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>ЩО МИ ПРОПОНУЄМО</h4>
+          <ul>
+            <li><a href="#">Поради для подорожей</a></li>
+            <li><a href="#">Бюджетні маршрути</a></li>
+            <li><a href="#">Огляди міст</a></li>
+            <li><a href="#">Гастрономічні тури</a></li>
+            <li><a href="#">Екскурсії</a></li>
+            <li><a href="#">Авторські путівники</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>КОНТАКТИ</h4>
+          <p>+38 067 123 45 67</p>
+          <p>
+            <a href="mailto:hello@podoroj.com">hello@podoroj.com</a>
+          </p>
+          <p>
+            вул. Степана Бандери, 10 <br />
+            Львів, Україна <br />
+            01001
+          </p>
+        </div>
+      </div>
+
+      <!-- Нижня частина -->
+      <div class="footer-bottom">
+        <p>© Podoroj 2025 <a href="#">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a></p>
+        <p>ДИЗАЙН ТА РОЗРОБКА ⚡ <a href="#">WEBSTUDIO</a></p>
+      </div>
+
+      <!-- Великий напис на фоні -->
+      <div class="footer-bg-text">Podoroj</div>
+    </footer>
+    <script>
+      function redirectToCreate() {
+        window.location.href = "../html/create_post.html";
+      }
+    </script>
+  </body>
+</html>

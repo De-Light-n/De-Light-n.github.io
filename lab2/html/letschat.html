@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Chat</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">Podoroj</div>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li class="nav-item dropdown">
+            <a href="../html/articles.html">Статті +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Подорожі</h4>
+                <a href="#">Останні статті</a>
+                <a href="#">Популярне</a>
+                <a href="#">Рекомендовані місця</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Поради</h4>
+                <a href="#">Бюджетні подорожі</a>
+                <a href="#">Як зекономити</a>
+                <a href="#">Що взяти в дорогу</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Культура & Їжа</h4>
+                <a href="#">Місцеві традиції</a>
+                <a href="#">Кухні світу</a>
+                <a href="#">Ресторани та кафе</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Путівники</h4>
+                <a href="#">Маршрути по містах</a>
+                <a href="#">Похідні маршрути</a>
+                <a href="#">Екскурсії</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#">Напрямки +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Європа</h4>
+                <a href="#">Італія</a>
+                <a href="#">Франція</a>
+                <a href="#">Іспанія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Азія</h4>
+                <a href="#">Таїланд</a>
+                <a href="#">Індія</a>
+                <a href="#">Японія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Америка</h4>
+                <a href="#">США</a>
+                <a href="#">Бразилія</a>
+                <a href="#">Мексика</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Африка</h4>
+                <a href="#">Єгипет</a>
+                <a href="#">Кенія</a>
+                <a href="#">Марокко</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="../html/gallery.html">Фотогалерея</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../html/aboutus.html">Про нас</a>
+          </li>
+        </ul>
+      </div>
+      <a href="../html/register_form.html" class="cta-button"
+        >Зареєструватися</a
+      >
+      <script src="../js/dropdown.js" defer></script>
+    </nav>
+
+    <div class="container">
+      <div class="left-column">
+        <div class="lets-chat-left-column">
+          <h1>Давайте поспілкуємось</h1>
+          <p class="intro">
+            Це нічого не коштує. Подорожі починаються з розмови!
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-block">
+              <strong>hello@podoroj.com</strong>
+              <p>+38 098 123 45 67</p>
+            </div>
+            <div class="contact-block">
+              <strong>Офіс TravelBlog</strong>
+              <p>вул. Степана Бандери, 10, Львів, Україна</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-group">
+          <label for="name">Як вас звати?</label>
+          <input type="text" id="name" placeholder="Ваше ім’я" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваша електронна пошта?</label>
+          <input type="email" id="email" placeholder="Електронна адреса" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Ваш номер телефону?</label>
+          <input type="tel" id="phone" placeholder="Номер телефону" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Про що ви хочете розповісти?</label>
+          <textarea
+            id="message"
+            placeholder="Поділіться своїми враженнями про подорож або запитайте нас про нові маршрути!"
+          ></textarea>
+        </div>
+
+        <p class="note">
+          Натискаючи кнопку, ви погоджуєтесь, що ми можемо використати ваші дані
+          для зв’язку з вами.
+        </p>
+
+        <button type="submit" class="cta-button">Надіслати повідомлення</button>
+      </div>
+    </div>
+  </body>
+
+  <footer class="footer">
+    <!-- Верхній рядок -->
+    <div class="footer-top">
+      <p>hello@podoroj.com • Відкрий світ разом з нами • hello@podoroj.com</p>
+    </div>
+
+    <!-- Основний контент -->
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2 class="footer-title">Мандруй. Досліджуй. Відкривай.</h2>
+        <button class="chat-btn" onclick="redirectToChat()">
+          Написати нам →
+        </button>
+        <script>
+          function redirectToChat() {
+            window.location.href = "../html/letschat.html";
+          }
+        </script>
+      </div>
+
+      <div class="footer-nav">
+        <h4>НАВІГАЦІЯ</h4>
+        <ul>
+          <li><a href="../html/aboutus.html">Про нас</a></li>
+          <li><a href="../html/articles.html">Статті</a></li>
+          <li><a href="../html/gallery.html">Фотогалерея</a></li>
+          <li><a href="#">Популярні напрямки</a></li>
+          <li><a href="#">Путівники</a></li>
+          <li><a href="../html/letschat.html">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>ЩО МИ ПРОПОНУЄМО</h4>
+        <ul>
+          <li><a href="#">Поради для подорожей</a></li>
+          <li><a href="#">Бюджетні маршрути</a></li>
+          <li><a href="#">Огляди міст</a></li>
+          <li><a href="#">Гастрономічні тури</a></li>
+          <li><a href="#">Екскурсії</a></li>
+          <li><a href="#">Авторські путівники</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>КОНТАКТИ</h4>
+        <p>+38 067 123 45 67</p>
+        <p>
+          <a href="mailto:hello@podoroj.com">hello@podoroj.com</a>
+        </p>
+        <p>
+          вул. Степана Бандери, 10 <br />
+          Львів, Україна <br />
+          01001
+        </p>
+      </div>
+    </div>
+
+    <!-- Нижня частина -->
+    <div class="footer-bottom">
+      <p>© Podoroj 2025 <a href="#">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a></p>
+      <p>ДИЗАЙН ТА РОЗРОБКА ⚡ <a href="#">WEBSTUDIO</a></p>
+    </div>
+
+    <!-- Великий напис на фоні -->
+    <div class="footer-bg-text">Podoroj</div>
+  </footer>
+</html>

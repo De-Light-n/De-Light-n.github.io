@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/posts.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <script type="module" src="../js/posts.js" defer></script>
+    <!-- посилання на файл для виводу постів -->
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo">Podoroj</div>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li class="nav-item dropdown">
+            <a href="../html/articles.html">Статті +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Подорожі</h4>
+                <a href="#">Останні статті</a>
+                <a href="#">Популярне</a>
+                <a href="#">Рекомендовані місця</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Поради</h4>
+                <a href="#">Бюджетні подорожі</a>
+                <a href="#">Як зекономити</a>
+                <a href="#">Що взяти в дорогу</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Культура & Їжа</h4>
+                <a href="#">Місцеві традиції</a>
+                <a href="#">Кухні світу</a>
+                <a href="#">Ресторани та кафе</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Путівники</h4>
+                <a href="#">Маршрути по містах</a>
+                <a href="#">Похідні маршрути</a>
+                <a href="#">Екскурсії</a>
+                <a href="#" class="view-all">Переглянути всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#">Напрямки +</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-element">
+                <h4>Європа</h4>
+                <a href="#">Італія</a>
+                <a href="#">Франція</a>
+                <a href="#">Іспанія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Азія</h4>
+                <a href="#">Таїланд</a>
+                <a href="#">Індія</a>
+                <a href="#">Японія</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Америка</h4>
+                <a href="#">США</a>
+                <a href="#">Бразилія</a>
+                <a href="#">Мексика</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+              <div class="dropdown-element">
+                <h4>Африка</h4>
+                <a href="#">Єгипет</a>
+                <a href="#">Кенія</a>
+                <a href="#">Марокко</a>
+                <a href="#" class="view-all">Дивитися всі</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="../html/gallery.html">Фотогалерея</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../html/aboutus.html">Про нас</a>
+          </li>
+        </ul>
+      </div>
+      <a href="../html/register_form.html" class="cta-button"
+        >Зареєструватися</a
+      >
+      <script src="../js/dropdown.js" defer></script>
+    </nav>
+
+    <div class="header-quotes">
+      <h3>Discover World With Other Eyes</h3>
+      <h1>Amazing Stories and Photos</h1>
+    </div>
+
+    <div class="posts">
+      <div class="cards">
+        <!-- <a class="card" href="../html/post.html">
+          <div class="card-image-container">
+            <img
+              src="../images/mountains-6486093_1920.jpg"
+              alt="Post Image"
+              class="card-image"
+            />
+          </div>
+          <div class="card-content">
+            <div class="author-container">
+              <img
+                src="../images/mountains_2.jpg"
+                alt="JORDAN STACHINI"
+                class="author-avatar"
+              />
+              <span class="author">JORDAN STACHINI</span>
+            </div>
+            <h3 class="card-title">
+              Managing Marketing Projects with Agile Principles
+            </h3>
+            <div class="card-date">5 MINUTES</div>
+          </div>
+        </a>
+        <a class="card" href="post.html">
+          <div class="card-image-container">
+            <img
+              src="../images/mountains-6486093_1920.jpg"
+              alt="Post Image"
+              class="card-image"
+              onerror="this.parentElement.textContent = '👤'"
+            />
+          </div>
+          <div class="card-content">
+            <div class="author-container">
+              <img
+                src="../images/mountains_2.jpg"
+                alt="JORDAN STACHINI"
+                class="author-avatar"
+              />
+              <span class="author">JORDAN STACHINI</span>
+            </div>
+            <h3 class="card-title">
+              Managing Marketing Projects with Agile Principles
+            </h3>
+            <div class="card-date">5 MINUTES</div>
+          </div>
+        </a>
+        <a class="card" href="post.html">
+          <div class="card-image-container">
+            <img
+              src="../images/mountains-6486093_1920.jpg"
+              alt="Post Image"
+              class="card-image"
+              onerror="this.parentElement.textContent = '👤'"
+            />
+          </div>
+          <div class="card-content">
+            <div class="author-container">
+              <img
+                src="../images/mountains_3.jpg"
+                alt="JORDAN STACHINI"
+                class="author-avatar"
+                onerror="this.parentElement.textContent = '👤'"
+              />
+              <span class="author">JORDAN STACHINI</span>
+            </div>
+            <h3 class="card-title">
+              Managing Marketing Projects with Agile Principles
+            </h3>
+            <div class="card-date">5 MINUTES</div>
+          </div>
+        </a> -->
+        <!-- Додаткові карточки можна додати тут -->
+      </div>
+      <div class="sidebar">
+        <!-- <h2>Інші пости</h2>
+        <div class="sidebar-post">
+          <h3>JORDAN STACHINI</h3>
+          <p>The Dynamic Duo: Project Management and Marketing</p>
+          <div class="divider"></div>
+        </div>
+        <div class="sidebar-post">
+          <h3>DOROUS STACHINI</h3>
+          <p>Demystifying the Marketing Strategy Audit Process</p>
+          <div class="divider"></div>
+        </div>
+        <div class="sidebar-post">
+          <h3>FROM NOT LOSING OF ENGINEERING MODELS</h3>
+          <p>4 MINUTES</p>
+          <div class="divider"></div>
+        </div>
+        <div class="sidebar-post">
+          <h3>Which Social Media channels should my business be using?</h3>
+          <div class="divider"></div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- <div class="pagination">
+      <a href="#" class="page-arrow">←</a>
+      <a href="#" class="page-number">1</a>
+      <a href="#" class="page-number">2</a>
+      <a href="#" class="page-number active">3</a>
+      <a href="#" class="page-number">4</a>
+      <a href="#" class="page-arrow">→</a>
+    </div> -->
+  </body>
+
+  <footer class="footer">
+    <!-- Верхній рядок -->
+    <div class="footer-top">
+      <p>hello@podoroj.com • Відкрий світ разом з нами • hello@podoroj.com</p>
+    </div>
+
+    <!-- Основний контент -->
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2 class="footer-title">Мандруй. Досліджуй. Відкривай.</h2>
+        <button class="chat-btn" onclick="redirectToChat()">
+          Написати нам →
+        </button>
+        <script>
+          function redirectToChat() {
+            window.location.href = "../html/letschat.html";
+          }
+        </script>
+      </div>
+
+      <div class="footer-nav">
+        <h4>НАВІГАЦІЯ</h4>
+        <ul>
+          <li><a href="../html/aboutus.html">Про нас</a></li>
+          <li><a href="../html/articles.html">Статті</a></li>
+          <li><a href="../html/gallery.html">Фотогалерея</a></li>
+          <li><a href="#">Популярні напрямки</a></li>
+          <li><a href="#">Путівники</a></li>
+          <li><a href="../html/letschat.html">Контакти</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>ЩО МИ ПРОПОНУЄМО</h4>
+        <ul>
+          <li><a href="#">Поради для подорожей</a></li>
+          <li><a href="#">Бюджетні маршрути</a></li>
+          <li><a href="#">Огляди міст</a></li>
+          <li><a href="#">Гастрономічні тури</a></li>
+          <li><a href="#">Екскурсії</a></li>
+          <li><a href="#">Авторські путівники</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>КОНТАКТИ</h4>
+        <p>+38 067 123 45 67</p>
+        <p>
+          <a href="mailto:hello@podoroj.com">hello@podoroj.com</a>
+        </p>
+        <p>
+          вул. Степана Бандери, 10 <br />
+          Львів, Україна <br />
+          01001
+        </p>
+      </div>
+    </div>
+
+    <!-- Нижня частина -->
+    <div class="footer-bottom">
+      <p>© Podoroj 2025 <a href="#">ПОЛІТИКА КОНФІДЕНЦІЙНОСТІ</a></p>
+      <p>ДИЗАЙН ТА РОЗРОБКА ⚡ <a href="#">WEBSTUDIO</a></p>
+    </div>
+
+    <!-- Великий напис на фоні -->
+    <div class="footer-bg-text">Podoroj</div>
+  </footer>
+</html>
